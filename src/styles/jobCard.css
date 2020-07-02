@@ -1,0 +1,37 @@
+article{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 30px;
+    padding: 0 20px;
+    box-shadow: 0 0 15px 0 #d6e8eb;
+    border-radius: 5px;
+}
+.Info{
+    display: flex;
+}
+.img{
+    align-self: center;
+    margin-right: 30px;
+}
+.Tags{
+    display: flex;
+    align-items: center;
+}
+.Tags div{
+    max-width: 20%;
+}
+.Tags div button{
+    transition: .4s;
+    cursor: pointer;
+    color: #55a2a0;
+    padding: 5px 10px;
+    background-color: #f3f6f4;
+    border: none;
+    border-radius: 5px;
+}
+.Tags div button:hover{
+    transition: .4s;
+    color: white;
+    background-color: #55a2a0;
+}
