@@ -12,16 +12,15 @@ const JobCard = (props) => {
                     <img src={img} alt="an imge"/>
                 </div>
                 <div className="Text">
-                    <p key="1">{enterprice}</p>
-                    <p key="2">{jobName}</p>
-                    <p key="5">{moreInfo}</p>
+                    <p>{enterprice}</p>
+                    <p>{jobName}</p>
+                    <p>{moreInfo}</p>
                 </div>
             </div>
             <div className="Tags">
                 {technology.map((string, index) => {
                     return <Tag key={index} technology={string} />
                 })
-
                 }
             </div>
         </article>

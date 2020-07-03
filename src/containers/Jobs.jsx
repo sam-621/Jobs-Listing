@@ -2,32 +2,48 @@ import React from 'react';
 import '../styles/app.css'
 
 import JobCard from '../components/JobCard';
-import photo from '../images/photosnap.svg'
-// const Logos = [
-//     "../images/manage.svg",
-//     "../images/account.svg",
-// ]
-// var count = 0;
+import photosnap from '../images/photosnap.svg';
+import manage from '../images/manage.svg'
+import account from '../images/account.svg';
+import myHome from '../images/myhome.svg';
+import loopStudio from '../images/loop-studios.svg';
+import faceit from '../images/faceit.svg';
+import shortly from '../images/shortly.svg';
+import insure from '../images/insure.svg';
+import eyeCamp from '../images/eyecam-co.svg'
 
 class Jobs extends React.Component {
     render() {
+        const Logos = [
+            photosnap,
+            manage,
+            account,
+            myHome,
+            loopStudio,
+            faceit,
+            shortly,
+            insure,
+            eyeCamp
+        ]
+
         let jobsFounded = [];
         this.props.data.forEach((job, index) => {
-            console.log(job.id.toString())
 
             if(job.company.indexOf(this.props.value) === -1) {
                 return
             }
+
             jobsFounded.push(
                 <JobCard 
-                    key={index}
-                    img={photo}
+                    key={job.id}
+                    img={Logos[job.id-1]}
                     enterprice={job.company}
                     jobName={job.position}
                     moreInfo={job.postedAt}
                     technology={job.languages}
                 />
             );
+
         })
         return(
             <>
