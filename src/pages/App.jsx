@@ -10,7 +10,8 @@ class App extends React.Component {
         this.state = {
             inputValue: '',
         }
-        this.handleChange = this.handleChange.bind(this)
+        this.handleChange = this.handleChange.bind(this);
+        this.clear = this.clear.bind(this);
     }
     
     handleChange(e) {
@@ -19,10 +20,21 @@ class App extends React.Component {
         });
     }
 
+    handleSubmit(e) {
+        e.preventDefault();
+    }
+
+    clear(e) {
+        this.setState({
+            inputValue: ''
+        });
+        e.preventDefault();
+    }
+
     render() {
         return(
             <>
-                <SearchBar inputValue={this.state.inputValue} onChange={this.handleChange} />
+                <SearchBar inputValue={this.state.inputValue} onChange={this.handleChange} clear={this.clear} onSubmit={this.handleSubmit} />
                 <Jobs data={this.props.data} value={this.state.inputValue}/>
             </>
         );

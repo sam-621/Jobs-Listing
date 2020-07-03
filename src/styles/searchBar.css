@@ -1,0 +1,27 @@
+.SearchContainer{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 15px 0 #d5eaed;
+    margin: 0 30px;
+}
+form{
+    width: 94%;
+}
+input[type="text"]{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px;
+    width: 93%;
+    height: 30px;
+}
+.SearchContainer button{
+    outline: none;
+    color: #55a2a0;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
