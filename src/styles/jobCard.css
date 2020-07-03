@@ -8,6 +8,7 @@ article{
     border-radius: 5px;
 }
 .Info{
+    margin-top: 20px;
     display: flex;
 }
 .img{
@@ -50,4 +51,47 @@ strong{
 .Featured{
     border-radius: 20px;
     background-color: #2b3635;
+}
+
+@media screen and (max-width: 770px){
+    article{
+        font-size: 12px;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+    .Tags{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen  and (max-width: 520px){
+    .Info{
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+    .img{
+        margin-right: 0;
+    }
+    .Hero img{
+        height: 60px;
+    }
+    .Tags{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 375px){
+    article{
+        margin: 20px 10px;
+    }
+    .Tags{
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Text p strong{
+        font-size: 10px;
+        margin: 0 2px;
+    }
 }
