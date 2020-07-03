@@ -5,7 +5,7 @@ const SearchBar = (props) => {
     return(
         <div className="SearchContainer">
             <form onSubmit={props.onSubmit}>
-                <input type="text" value={props.inputValue} onChange={props.onChange} />
+                <input type="text" placeholder="Search" value={props.inputValue} onChange={props.onChange} />
             </form>
             <div className="clear">
                 <button onClick={props.clear}>Clear</button>

@@ -4,7 +4,7 @@ article{
     grid-template-columns: 1fr 1fr;
     margin: 20px 30px;
     padding: 0 20px;
-    box-shadow: 0 0 15px 0 #d6e8eb;
+    box-shadow: 0px 0px 25px 0px rgba(157,189,188,1);
     border-radius: 5px;
 }
 .Info{
@@ -36,9 +36,11 @@ article{
     background-color: #55a2a0;
 }
 strong{
+    font-weight: 300;
+    font-size: 12px;
     color: white;
     margin: 0 10px;
-    padding: 0 10px;
+    padding: 5px 10px;
     padding-bottom: 2px;
 }
 .new{
