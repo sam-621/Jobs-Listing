@@ -4,7 +4,7 @@ import '../styles/jobCard.css';
 import Tag from '../components/Tag';
 
 const JobCard = (props) => {
-    const { img, enterprice, jobName, moreInfo, technology} = props;
+    const { neww, featured, img, enterprice, jobName, postedAt, contract, location, technology} = props;
     return(
         <article>
             <div className="Info">
@@ -12,9 +12,9 @@ const JobCard = (props) => {
                     <img src={img} alt="an imge"/>
                 </div>
                 <div className="Text">
-                    <p>{enterprice}</p>
+                    <p>{enterprice} {neww ? <strong className="new">new</strong> : ''} {featured ? <strong className="Featured">Featured</strong> : ''}</p>
                     <p>{jobName}</p>
-                    <p>{moreInfo}</p>
+                    <p>{postedAt} * {contract} * {location}</p>
                 </div>
             </div>
             <div className="Tags">

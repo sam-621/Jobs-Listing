@@ -3,8 +3,9 @@ body{
     background-color: #f0fafb;
 }
 .Hero{
-    
+    width: 100%;
 }
 .Hero img{
     background-color: #5da5a4;
+    width: 100%;
 }

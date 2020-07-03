@@ -39,8 +39,12 @@ class Jobs extends React.Component {
                     key={job.id}
                     img={Logos[job.id-1]}
                     enterprice={job.company}
+                    neww= {job.new}
+                    featured= {job.featured}
                     jobName={job.position}
-                    moreInfo={job.postedAt}
+                    postedAt={job.postedAt}
+                    contract={job.contract}
+                    location={job.location}
                     technology={job.languages}
                 />
             );
