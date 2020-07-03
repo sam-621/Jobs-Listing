@@ -73,6 +73,36 @@ const Data = [
     contract: "Full Time",
     location: "USA Only",
     languages: ["JavaScript", "Python"]
+  },
+  {
+    id: 8,
+    company: "Insure",
+    logo: "../images/photosnap.svg", 
+    position: "Senior Frontend Developer", 
+    postedAt: "1d ago",
+    contract: "Full Time",
+    location: "USA Only",
+    languages: ["JavaScript", "Python"]
+  },
+  {
+    id: 9,
+    company: "Eyecam Co.",
+    logo: "../images/photosnap.svg", 
+    position: "Senior Frontend Developer", 
+    postedAt: "1d ago",
+    contract: "Full Time",
+    location: "USA Only",
+    languages: ["JavaScript", "Python"]
+  },
+  {
+    id: 10,
+    company: "The Air Filter Company",
+    logo: "../images/photosnap.svg", 
+    position: "Senior Frontend Developer", 
+    postedAt: "1d ago",
+    contract: "Full Time",
+    location: "USA Only",
+    languages: ["JavaScript", "Python"]
   }
 ]
 

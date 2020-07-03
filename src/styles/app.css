@@ -1,3 +1,10 @@
 body{
+    margin: 0;
     background-color: #f0fafb;
+}
+.Hero{
+    
+}
+.Hero img{
+    background-color: #5da5a4;
 }

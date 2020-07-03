@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/app.css'
 
 import JobCard from '../components/JobCard';
 import photosnap from '../images/photosnap.svg';
@@ -10,7 +9,8 @@ import loopStudio from '../images/loop-studios.svg';
 import faceit from '../images/faceit.svg';
 import shortly from '../images/shortly.svg';
 import insure from '../images/insure.svg';
-import eyeCamp from '../images/eyecam-co.svg'
+import eyeCamp from '../images/eyecam-co.svg';
+import filterEye from '../images/the-air-filter-company.svg'
 
 class Jobs extends React.Component {
     render() {
@@ -23,7 +23,8 @@ class Jobs extends React.Component {
             faceit,
             shortly,
             insure,
-            eyeCamp
+            eyeCamp,
+            filterEye
         ]
 
         let jobsFounded = [];

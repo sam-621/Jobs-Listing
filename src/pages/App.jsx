@@ -1,5 +1,7 @@
 import React from 'react';
+import '../styles/app.css'
 
+import Header from '../images/bg-header-desktop.svg'
 import Jobs from '../containers/Jobs';
 import SearchBar from '../containers/SearchBar';
 
@@ -34,8 +36,23 @@ class App extends React.Component {
     render() {
         return(
             <>
-                <SearchBar inputValue={this.state.inputValue} onChange={this.handleChange} clear={this.clear} onSubmit={this.handleSubmit} />
-                <Jobs data={this.props.data} value={this.state.inputValue}/>
+                <header>
+                    <div className="Hero">
+                        <img src={Header} alt=""/>
+                    </div>
+                    <div className="SearchBar">
+                        <SearchBar 
+                            inputValue={this.state.inputValue} 
+                            onChange={this.handleChange} 
+                            clear={this.clear} 
+                            onSubmit={this.handleSubmit} 
+                        />
+                    </div>
+                </header>
+                <Jobs 
+                    data={this.props.data} 
+                    value={this.state.inputValue}
+                />
             </>
         );
     }
