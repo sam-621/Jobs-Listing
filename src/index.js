@@ -38,7 +38,7 @@ const Data = [
     postedAt: "2d ago",
     contract: "Part Time",
     location: "USA Only",
-    languages: ["JavaScript", "React", "Sass"],
+    languages: ["React", "Sass", "JavaScript"],
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ const Data = [
     postedAt: "2w ago",
     contract: "Full Time",
     location: "UK Only",
-    languages: ["HTML", "JavaScript", "RoR"]
+    languages: ["HTML", "RoR", "JavaScript"]
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ const Data = [
     postedAt: "2w ago",
     contract: "Full Time",
     location: "Worldwide",
-    languages: ["JavaScript", "Python", "Sass"]
+    languages: [ "Python", "Sass", "JavaScript"]
   },
   {
     id: 8,
@@ -110,7 +110,7 @@ const Data = [
     postedAt: "3w ago",
     contract: "Full Time",
     location: "Worldwide",
-    languages: ["Django", "JavaScript", "Python"]
+    languages: ["Django", "Python", "JavaScript"]
   },
   {
     id: 10,

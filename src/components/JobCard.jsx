@@ -12,7 +12,7 @@ const JobCard = (props) => {
                     <img src={img} alt="an imge"/>
                 </div>
                 <div className="Text">
-                    <p>{enterprice} {neww ? <strong className="new">NEW</strong> : ''} {featured ? <strong className="Featured">FEATURED</strong> : ''}</p>
+                    <p><strong className="company">{enterprice}</strong> {neww ? <strong className="new">NEW</strong> : ''} {featured ? <strong className="Featured">FEATURED</strong> : ''}</p>
                     <p>{jobName}</p>
                     <p>{postedAt} * {contract} * {location}</p>
                 </div>

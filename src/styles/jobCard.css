@@ -44,6 +44,11 @@ strong{
     padding: 5px 10px;
     padding-bottom: 2px;
 }
+.company{
+    font-weight: 600;
+    font-size: 18px;
+    color: #55a2a0;
+}
 .new{
     border-radius: 20px;
     background-color: #55a2a0;
