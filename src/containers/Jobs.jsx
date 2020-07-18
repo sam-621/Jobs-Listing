@@ -33,7 +33,6 @@ class Jobs extends React.Component {
             if(job.company.indexOf(this.props.value) === -1) {
                 return
             }
-
             jobsFounded.push(
                 <JobCard 
                     key={job.id}

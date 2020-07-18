@@ -84,19 +84,25 @@ strong{
     .Tags{
         justify-content: center;
     }
+    .company{
+        font-size: 12px;
+    }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
     article{
         margin: 20px 10px;
+    }
+    .Text p strong{
+        font-size: 10px;
+        margin: 0 2px;
     }
     .Tags{
         justify-content: start;
     }
-}
-
-@media screen and (max-width: 320px) {
-    .Text p strong{
+    .new{
         font-size: 10px;
-        margin: 0 2px;
+    }
+    .Featured{
+        font-size: 10px;
     }
 }
